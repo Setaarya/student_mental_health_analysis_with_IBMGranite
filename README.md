@@ -1,6 +1,6 @@
-# 💼 Analisis Kualifikasi Pekerjaan dengan GenAI
+# Analisis Kualifikasi Pekerjaan dengan GenAI
 
-## 📌 Judul Proyek
+## Judul Proyek
 **Pemahaman Kualifikasi Pekerjaan Menggunakan GenAI: Analisis dan Rekomendasi Keterampilan**
 
 ## Project Overview
@@ -12,14 +12,14 @@ Tujuan dari proyek ini adalah untuk:
 - Mengklasifikasikan posisi pekerjaan berdasarkan tingkat senioritas.
 - Memberikan rekomendasi upskilling (peningkatan keterampilan) bagi pencari kerja menggunakan model bahasa besar (LLM).
 
-## 📂 Tautan Dataset Mentah
+## Tautan Dataset
 1. [Google Job Skills Dataset (Kaggle)](https://www.kaggle.com/datasets/niyamatalmass/google-job-skills)
 2. [Amazon Job Skills Dataset (Kaggle)](https://www.kaggle.com/datasets/atahmasb/amazon-job-skills)
 
 ## Analysis Process
 
 
-## 📊 Insight & Findings
+## Insight & Findings
 Beberapa temuan awal dari analisis menggunakan GenAI:
 - 📌 **Keterampilan Paling Dicari**: Python, Machine Learning, Komunikasi, Cloud Computing, dan Agile Methodology.
 - ⚠️ **Gap Keterampilan**: Banyak posisi yang membutuhkan pengalaman dengan sistem berskala besar, kolaborasi tim, dan cloud, namun tidak banyak dicakup dalam kurikulum dasar teknik.
@@ -30,7 +30,7 @@ Beberapa temuan awal dari analisis menggunakan GenAI:
 
 ## Conclusion & Recommendations
 
-## 🤖 AI Support Explanation
+## AI Support Explanation
 Teknologi AI, khususnya LLM seperti GPT, digunakan untuk:
 - Mengklasifikasikan dan menganalisis teks tidak terstruktur dari kolom `Minimum Qualifications` dan `Preferred Qualifications`.
 - Menghasilkan ringkasan kualifikasi pekerjaan dan menyarankan bidang pengembangan diri.
