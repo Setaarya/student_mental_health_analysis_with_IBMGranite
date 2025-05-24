@@ -1,46 +1,105 @@
-# Analisis Kualifikasi Pekerjaan dengan GenAI
+## 📌 **Title Project:**
 
-## Judul Proyek
-**Pemahaman Kualifikasi Pekerjaan Menggunakan GenAI: Analisis dan Rekomendasi Keterampilan**
+**Student Mental Health Analysis: Understanding the Relationship Between Lifestyle Factors and Academic Performance**
 
-## Project Overview
-Proyek ini memanfaatkan kekuatan Generative AI (GenAI) untuk menganalisis dan mendapatkan insight dari dua dataset publik yang berisi deskripsi dan kualifikasi pekerjaan dari perusahaan teknologi besar: Google dan Amazon.
+---
 
-Tujuan dari proyek ini adalah untuk:
-- Mengidentifikasi keterampilan yang paling banyak dicari.
-- Menganalisis gap keterampilan antara minimum dan preferensi.
-- Mengklasifikasikan posisi pekerjaan berdasarkan tingkat senioritas.
-- Memberikan rekomendasi upskilling (peningkatan keterampilan) bagi pencari kerja menggunakan model bahasa besar (LLM).
+## 📝 **Project Overview**
 
-## Tautan Dataset
-1. [Google Job Skills Dataset (Kaggle)](https://www.kaggle.com/datasets/niyamatalmass/google-job-skills)
-2. [Amazon Job Skills Dataset (Kaggle)](https://www.kaggle.com/datasets/atahmasb/amazon-job-skills)
+**Tujuan Proyek:**
+Menganalisis faktor-faktor gaya hidup seperti durasi penggunaan layar (screen time), durasi tidur, aktivitas fisik, stres, dan kecemasan menjelang ujian untuk memahami dampaknya terhadap perubahan performa akademik siswa dan mahasiswa.
 
-## Analysis Process
+**Latar Belakang:**
+Di era digital saat ini, penggunaan perangkat elektronik meningkat tajam di kalangan pelajar. Bersamaan dengan itu, muncul tantangan seperti gangguan tidur, meningkatnya kecemasan, dan penurunan performa belajar. Maka, penting untuk memahami bagaimana kebiasaan sehari-hari memengaruhi kesehatan mental dan performa akademik.
 
+**Permasalahan:**
 
-## Insight & Findings
-Beberapa temuan awal dari analisis menggunakan GenAI:
-- 📌 **Keterampilan Paling Dicari**: Python, Machine Learning, Komunikasi, Cloud Computing, dan Agile Methodology.
-- ⚠️ **Gap Keterampilan**: Banyak posisi yang membutuhkan pengalaman dengan sistem berskala besar, kolaborasi tim, dan cloud, namun tidak banyak dicakup dalam kurikulum dasar teknik.
-- 🧩 **Distribusi Tingkat Pekerjaan**: Mayoritas posisi berada di level Menengah, diikuti oleh level Pemula dan Senior.
-- 🎯 **Rekomendasi Upskilling**: Belajar tentang Cloud (AWS/GCP), pengembangan API, dan Data Analytics penting untuk peningkatan karier.
-- 🧠 **Klasterisasi Kualifikasi**: GenAI mengelompokkan keterampilan sejenis menjadi tema besar seperti: Deep Learning, Infrastruktur Cloud, dan Proyek Tim.
+* Apakah screen time berdampak langsung pada penurunan prestasi akademik?
+* Sejauh mana stres dan kecemasan berperan terhadap performa akademik?
+* Apakah aktivitas fisik mampu mengurangi dampak negatif dari stres dan screen time?
 
+**Pendekatan:**
 
-## Conclusion & Recommendations
+* Analisis data tabular menggunakan Python (pandas, seaborn)
+* Pengelompokan berdasarkan atribut (usia, jenis kelamin, tingkat pendidikan)
+* Visualisasi data untuk menemukan pola tersembunyi
+* Model klasifikasi ringan dengan AI untuk memprediksi perubahan performa
 
-## AI Support Explanation
-Teknologi AI, khususnya LLM seperti GPT, digunakan untuk:
-- Mengklasifikasikan dan menganalisis teks tidak terstruktur dari kolom `Minimum Qualifications` dan `Preferred Qualifications`.
-- Menghasilkan ringkasan kualifikasi pekerjaan dan menyarankan bidang pengembangan diri.
-- Mengklasifikasikan posisi pekerjaan berdasarkan tingkat senioritas menggunakan pemahaman semantik.
-- Membersihkan data dan menggabungkan informasi dari dua sumber yang berbeda.
+---
 
-### Contoh Prompt yang Digunakan:
-```plaintext
-Title: Software Development Engineer
-Minimum Qualifications: Sarjana Ilmu Komputer, pengalaman Java 2 tahun.
-Preferred Qualifications: Pengalaman dengan AWS, Docker, dan Agile Development.
+## 📊 **Raw Dataset Link**
 
-Tolong ringkas keterampilan utama, rekomendasi upskilling, dan klasifikasi tingkat senioritas.
+Dataset dapat ditemukan (atau diunggah) pada link berikut:
+📎 [Student Mental Health Dataset (Simulasi)](https://example.com/student-mental-health-dataset) *(Silakan ganti dengan link asli jika tersedia)*
+
+---
+
+## 🔍 **Analysis Process**
+
+1. **Data Cleaning & Preprocessing**
+
+   * Handling missing values (jika ada)
+   * Encoding kolom kategorikal (Stress Level, Gender, Academic Performance Change)
+
+2. **Exploratory Data Analysis (EDA)**
+
+   * Statistik deskriptif untuk tiap fitur
+   * Korelasi antar fitur (heatmap)
+   * Visualisasi: boxplot, bar chart, scatterplot
+
+3. **Segmentasi Data**
+
+   * Pengelompokan berdasarkan kelompok umur (remaja vs dewasa muda)
+   * Perbandingan berdasarkan tingkat stres & kecemasan
+
+4. **AI Modeling**
+
+   * Menggunakan LLM dan rule-based logic untuk klasifikasi apakah performa meningkat, menurun, atau tetap
+   * Pendekatan berbasis decision tree atau Naive Bayes untuk interpretasi mudah
+
+5. **Interpretasi dan Penarikan Insight**
+
+---
+
+## 💡 **Insight & Findings**
+
+1. **Screen Time Tinggi Tidak Selalu Merugikan**
+   → Dampak negatif hanya muncul jika tidak diimbangi dengan tidur cukup atau aktivitas fisik.
+
+2. **Aktivitas Fisik >6 jam/minggu Meningkatkan Stabilitas Performa**
+   → Individu dengan aktivitas fisik tinggi cenderung memiliki performa stabil atau meningkat meskipun memiliki stres atau screen time tinggi.
+
+3. **Kecemasan Menjelang Ujian Bukan Faktor Tunggal Penurunan Performa**
+   → Kecemasan yang diimbangi dengan kebiasaan sehat (tidur dan olahraga) tetap memungkinkan peningkatan performa.
+
+4. **Mahasiswa Tingkat Akhir Menunjukkan Penurunan Performa Lebih Banyak**
+   → Usia dewasa muda (25 tahun) memiliki tantangan mental dan stres tersendiri yang tidak hanya berkaitan dengan faktor fisik.
+
+---
+
+## ✅ **Conclusion & Recommendation**
+
+**Kesimpulan:**
+Faktor-faktor seperti aktivitas fisik dan pola tidur lebih menentukan performa akademik dibandingkan hanya sekadar screen time atau stres. Keseimbangan gaya hidup sangat berpengaruh terhadap kesehatan mental dan hasil belajar siswa.
+
+**Rekomendasi:**
+
+1. Kampus/sekolah dapat mengadakan program olahraga mingguan >6 jam.
+2. Edukasi manajemen waktu dan kebiasaan tidur sehat untuk siswa.
+3. Sediakan layanan konseling menjelang masa ujian untuk membantu siswa mengelola kecemasan.
+4. Gunakan pemantauan digital terhadap durasi screen time siswa sebagai indikator risiko dini.
+
+---
+
+## 🤖 **AI Support Explanation**
+
+* **LLM (Large Language Model)** digunakan untuk:
+
+  * Menganalisis dan menyimpulkan insight dari pola korelasi dalam data.
+  * Mengklasifikasi hasil performa akademik menggunakan kombinasi fitur seperti stres, screen time, dan durasi tidur.
+  * Menyusun otomatisasi narasi insight dan rekomendasi berbasis data.
+
+* **Model AI tambahan:**
+
+  * *Rule-based classifier*: Klasifikasi sederhana (naik/turun/tetap) berdasarkan ambang batas fitur seperti screen time >8 jam + stres tinggi → performa kemungkinan menurun.
+  * *Visualization tools* (seaborn, matplotlib) digunakan untuk membantu AI dalam mengenali pola-pola yang tidak terlihat secara kasat mata.
