@@ -29,8 +29,26 @@ Di era digital saat ini, penggunaan perangkat elektronik meningkat tajam di kala
 
 ## 📊 **Raw Dataset Link**
 
-Dataset dapat ditemukan (atau diunggah) pada link berikut:
-📎 [Student Mental Health Dataset (Simulasi)](https://example.com/student-mental-health-dataset) *(Silakan ganti dengan link asli jika tersedia)*
+Dataset dapat ditemukan pada link berikut:
+
+📎 [Student Mental Health Dataset](https://www.kaggle.com/datasets/utkarshsharma11r/student-mental-health-analysis)
+
+Dataset ini berisi tanggapan dari 1.000 siswa mengenai kondisi kesehatan mental mereka selama era pembelajaran daring. Data dikumpulkan melalui survei dan berfokus pada berbagai aspek psikologis serta perilaku yang dipengaruhi oleh pendidikan jarak jauh.
+
+Dataset terdiri dari 10 kolom, yang mencakup informasi demografis, kebiasaan gaya hidup, serta indikator kesehatan mental yang dilaporkan sendiri. Berikut ringkasan kolomnya:
+
+| Kolom                            | Deskripsi                                                            |
+| -------------------------------- | -------------------------------------------------------------------- |
+| **Name**                         | Nama depan siswa (tidak penting untuk analisis, dapat dianonimkan)   |
+| **Gender**                       | Jenis kelamin responden (Laki-laki/Perempuan)                        |
+| **Age**                          | Usia responden dalam tahun                                           |
+| **Education Level**              | Jenjang pendidikan (misal: Kelas 8, BTech, MSc)                      |
+| **Screen Time (hrs/day)**        | Rata-rata waktu layar per hari selama pembelajaran daring            |
+| **Sleep Duration (hrs)**         | Rata-rata durasi tidur harian                                        |
+| **Physical Activity (hrs/week)** | Durasi olahraga/mobilitas fisik per minggu                           |
+| **Stress Level**                 | Tingkat stres yang dirasakan (Rendah, Sedang, Tinggi)                |
+| **Anxious Before Exams**         | Apakah siswa merasa cemas sebelum ujian (Ya/Tidak)                   |
+| **Academic Performance Change**  | Perubahan kinerja akademik yang dirasakan (Meningkat, Sama, Menurun) |
 
 ---
 
