@@ -1,6 +1,6 @@
 ## 📌 **Title Project:**
 
-**Student Mental Health Analysis: Understanding the Relationship Between Lifestyle Factors and Academic Performance**
+# **Student Mental Health Analysis: Understanding the Relationship Between Lifestyle Factors and Academic Performance**
 
 ---
 
@@ -67,16 +67,20 @@ Dataset terdiri dari 10 kolom, yang mencakup informasi demografis, kebiasaan gay
 
 ## 🔍 **Analysis Process**
 
-1. **Data Cleaning & Preprocessing**
+1. **Exploratory Data Analysis (EDA)**
 
-   * Drop kolom name
-   * 
+   * Penghapusan Kolom yang Tidak Relevan
+      - Kolom ‘Name’ tidak memiliki kontribusi dalam proses analisis atau pemodelan karena hanya berisi nama depan siswa. Penghapusan dilakukan untuk menjaga privasi data dan          menghilangkan atribut non-informatif yang tidak relevan terhadap outcome analisis.
+        
+   * Pengacakan Data dan Pengambilan Sampel
+      - Mengacak urutan data secara acak namun tetap konsisten (dengan random_state=42) untuk menghindari bias urutan. Mengambil sampel acak sebanyak 500 data dari total 1.000 entri.
+        
+   * Konversi Tabel ke Format Teks
+      - Langkah ini memungkinkan data dikonversi menjadi representasi teks agar dapat digunakan dalam model bahasa besar (Large Language Model).
+        
+   * Heatmap dan Korelasi Antar Fitur
+      ![download123](https://github.com/user-attachments/assets/57cb0f37-29ad-4446-a46f-fa6b9f31afa1)
 
-2. **Exploratory Data Analysis (EDA)**
-
-   * Statistik deskriptif untuk tiap fitur
-   * Korelasi antar fitur (heatmap)
-   * Visualisasi: boxplot, bar chart, scatterplot
 
 3. **AI Modeling**
 
