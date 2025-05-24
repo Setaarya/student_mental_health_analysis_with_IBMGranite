@@ -7,23 +7,36 @@
 ## 📝 **Project Overview**
 
 **Tujuan Proyek:**
-Menganalisis faktor-faktor gaya hidup seperti durasi penggunaan layar (screen time), durasi tidur, aktivitas fisik, stres, dan kecemasan menjelang ujian untuk memahami dampaknya terhadap perubahan performa akademik siswa dan mahasiswa.
+Menganalisis korelasi dan pengaruh faktor-faktor gaya hidup utama (screen time, durasi tidur, dan aktivitas fisik) terhadap perubahan performa akademik dan tingkat stres siswa serta mahasiswa. Proyek ini bertujuan untuk mengidentifikasi pola-pola signifikan yang dapat membantu dalam pengembangan strategi peningkatan kesehatan mental dan performa akademik melalui analisis data berbasis AI.
 
 **Latar Belakang:**
-Di era digital saat ini, penggunaan perangkat elektronik meningkat tajam di kalangan pelajar. Bersamaan dengan itu, muncul tantangan seperti gangguan tidur, meningkatnya kecemasan, dan penurunan performa belajar. Maka, penting untuk memahami bagaimana kebiasaan sehari-hari memengaruhi kesehatan mental dan performa akademik.
+Kesehatan mental siswa dan mahasiswa menjadi isu krusial dalam sistem pendidikan modern, terutama selama era pembelajaran daring yang telah mengubah lanskap pendidikan secara fundamental. Pandemi dan transisi ke pembelajaran online telah menciptakan tantangan baru yang kompleks, mulai dari meningkatnya screen time, perubahan pola tidur, hingga berkurangnya aktivitas fisik yang berdampak signifikan pada kesehatan mental dan performa akademik.
+Dataset yang digunakan dalam proyek ini adalah Student Mental Health Dataset dari Kaggle yang berisi tanggapan dari 1.000 siswa mengenai kondisi kesehatan mental mereka selama era pembelajaran daring. Data dikumpulkan melalui survei komprehensif yang berfokus pada berbagai aspek psikologis serta perilaku yang dipengaruhi oleh pendidikan jarak jauh, memberikan gambaran nyata tentang dampak pembelajaran online terhadap wellbeing siswa.
+Dengan memanfaatkan teknologi AI dan machine learning, khususnya model IBM Granite sebagai large language model generatif, proyek ini berusaha mengungkap hubungan kompleks antara gaya hidup dan performa akademik melalui pendekatan analisis data yang komprehensif.
 
 **Permasalahan:**
 
-* Apakah screen time berdampak langsung pada penurunan prestasi akademik?
-* Sejauh mana stres dan kecemasan berperan terhadap performa akademik?
-* Apakah aktivitas fisik mampu mengurangi dampak negatif dari stres dan screen time?
+* Bagaimana pengaruh durasi screen time terhadap tingkat stres dan performa akademik siswa selama pembelajaran daring, serta apakah terdapat ambang optimal screen time yang mampu menyeimbangkan kesehatan mental dan hasil belajar?
+* Sejauh mana durasi tidur memengaruhi performa akademik dan tingkat stres siswa selama pembelajaran daring, serta apakah terdapat durasi tidur optimal yang dapat berperan sebagai faktor protektif bagi kesejahteraan akademik?
+* Sejauh mana aktivitas fisik berperan sebagai faktor mitigasi terhadap peningkatan stres dan penurunan performa akademik akibat gaya hidup tidak sehat selama pembelajaran daring, seperti screen time berlebih dan kurang tidur?
+* Bagaimana pengembangan model prediksi berbasis AI dapat mengintegrasikan interaksi antara screen time, durasi tidur, dan aktivitas fisik untuk mengidentifikasi siswa berisiko tinggi terhadap stres tinggi dan penurunan performa akademik, serta merekomendasikan kombinasi gaya hidup optimal sebagai intervensi preventif?
 
 **Pendekatan:**
 
-* Analisis data tabular menggunakan Python (pandas, seaborn)
-* Pengelompokan berdasarkan atribut (usia, jenis kelamin, tingkat pendidikan)
-* Visualisasi data untuk menemukan pola tersembunyi
-* Model klasifikasi ringan dengan AI untuk memprediksi perubahan performa
+1. Analisis Korelasi Menggunakan IBM Granite AI
+   
+     Pemanfaatan IBM Granite Large Language Model untuk analisis mendalam hubungan antara:
+  
+    * Screen Time (hrs/day) dengan Stress Level dan Academic Performance Change
+    * Sleep Duration (hrs) dengan Stress Level dan Academic Performance Change
+    * Physical Activity (hrs/week) dengan Stress Level dan Academic Performance Change
+
+3. Model Prediksi Personal Berbasis IBM Granite
+   
+    Pengembangan predictive model menggunakan IBM Granite AI untuk:
+
+    * Memprediksi Academic Performance Change berdasarkan kombinasi lifestyle factors individual
+    * Risk assessment berbasis AI untuk mengidentifikasi probabilitas academic decline
 
 ---
 
@@ -56,8 +69,8 @@ Dataset terdiri dari 10 kolom, yang mencakup informasi demografis, kebiasaan gay
 
 1. **Data Cleaning & Preprocessing**
 
-   * Handling missing values (jika ada)
-   * Encoding kolom kategorikal (Stress Level, Gender, Academic Performance Change)
+   * Drop kolom name
+   * 
 
 2. **Exploratory Data Analysis (EDA)**
 
@@ -65,17 +78,10 @@ Dataset terdiri dari 10 kolom, yang mencakup informasi demografis, kebiasaan gay
    * Korelasi antar fitur (heatmap)
    * Visualisasi: boxplot, bar chart, scatterplot
 
-3. **Segmentasi Data**
-
-   * Pengelompokan berdasarkan kelompok umur (remaja vs dewasa muda)
-   * Perbandingan berdasarkan tingkat stres & kecemasan
-
-4. **AI Modeling**
+3. **AI Modeling**
 
    * Menggunakan LLM dan rule-based logic untuk klasifikasi apakah performa meningkat, menurun, atau tetap
    * Pendekatan berbasis decision tree atau Naive Bayes untuk interpretasi mudah
-
-5. **Interpretasi dan Penarikan Insight**
 
 ---
 
