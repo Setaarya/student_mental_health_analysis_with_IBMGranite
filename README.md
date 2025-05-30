@@ -141,21 +141,20 @@ Dataset terdiri dari 10 kolom, yang mencakup informasi demografis, kebiasaan gay
 ## ✅ **Conclusion & Recommendation**
 
 **Kesimpulan:**
-Faktor-faktor seperti aktivitas fisik dan pola tidur lebih menentukan performa akademik dibandingkan hanya sekadar screen time atau stres. Keseimbangan gaya hidup sangat berpengaruh terhadap kesehatan mental dan hasil belajar siswa.
+Faktor seperti pola tidur dan aktivitas fisik terbukti lebih konsisten memengaruhi tingkat stres dan performa akademik dibandingkan hanya screen time. Siswa dengan durasi tidur cukup (sekitar 7–9 jam) dan aktivitas fisik tinggi (>7 jam/minggu) cenderung memiliki stres lebih rendah dan prestasi lebih baik. Meskipun screen time tinggi kadang tidak berdampak negatif, durasi yang berlebihan tetap berisiko terhadap kesejahteraan mental. Keseimbangan gaya hidup secara keseluruhan sangat penting dalam mendukung keberhasilan akademik dan kesehatan mental siswa.
 
 **Rekomendasi:**
 
-1. Kampus/sekolah dapat mengadakan program olahraga mingguan >6 jam.
-2. Edukasi manajemen waktu dan kebiasaan tidur sehat untuk siswa.
-3. Sediakan layanan konseling menjelang masa ujian untuk membantu siswa mengelola kecemasan.
-4. Gunakan pemantauan digital terhadap durasi screen time siswa sebagai indikator risiko dini.
+1. Kampus/sekolah dapat mengadakan program olahraga rutin dengan durasi minimal 6 jam per minggu.
+2. Berikan edukasi tentang manajemen waktu dan kebiasaan tidur sehat melalui workshop atau materi kurikulum.
+3. Sediakan layanan konseling, terutama menjelang masa ujian, untuk membantu siswa mengelola stres dan kecemasan.
+4. Pantau durasi screen time siswa menggunakan sistem digital sebagai indikator dini untuk intervensi psikologis atau akademik.
 
 ---
 
 ## 🤖 **AI Support Explanation**
 
-* **LLM (Large Language Model)** digunakan untuk:
+* **LLM (Large Language Model) IBM Granite** digunakan untuk:
 
   * Menganalisis dan menyimpulkan insight dari pola korelasi dalam data.
-  * Mengklasifikasi hasil performa akademik menggunakan kombinasi fitur seperti stres, screen time, dan durasi tidur.
-  * Menyusun otomatisasi narasi insight dan rekomendasi berbasis data.
+  * Mengklasifikasi hasil performa akademik menggunakan kombinasi fitur.
